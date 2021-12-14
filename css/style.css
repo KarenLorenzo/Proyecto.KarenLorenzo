@@ -6,6 +6,7 @@
 body{
     text-align: center;
     position: relative;
+    
 }
 /** HEADER **/
 .lines-effect{
@@ -47,7 +48,6 @@ body{
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-        
 }
 
 /** HEADER **/
@@ -66,7 +66,6 @@ body{
    color: rgb(90, 0, 0);
    margin: 20px;
    margin-top: 20%;
-   font-family: 'Raleway', sans-serif;
    border: 2px solid black;
 
 }
@@ -94,57 +93,57 @@ body{
 }
 
 .text{
-    margin: 30px;
+    font-size: 30px;
+    margin: 50px;
     width: 90%;
 }
 
 button{
-    background:  linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
-    padding: 15px 30px;
-    letter-spacing: 4px;
-    font-size: 20px;
+    background:  linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3));
+    padding: 15px 20px;
+    letter-spacing: 3px;
+    font-size: 16px;
     text-decoration: none;
     overflow: hidden;
     transition: 0.2s;
-    color: rgb(0, 0, 0);
-
+    color: rgb(51, 0, 0);
 }
 
  .text button:hover {
-    background: #520808;
+    background: #5208087c;
      padding: 15px 20px;
-     box-shadow: 0 0 10px #520808, 0 0 40px #520808, 0 0 80px #520808; 
+     box-shadow: 0 0 10px #5208087e, 0 0 40px #520808, 0 0 80px #520808; 
 }
 /** MAIN  **/
 
 
 /** BARRA DE NAVEGACION **/   
 
-.barraMenu li{
-    display: flex;
-    justify-content: space-between;
+
+
+.navbar li{
+     float: right;
 }
 
-.barraMenu ul{
+.navbar ul{
     font-family: 'Cormorant Garamond', serif;
     list-style-type: none;
     margin: 0px;
     padding: 0px;
     display: flex;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
     justify-content: right;
 }
 
-.barraMenu a{
+.navbar a{
    color: rgb(255, 238, 238);
    text-align: center;
    text-decoration: none;
-   padding: 10px 20px;
-   font-size: 1.4rem;
+   padding: 3px 10px;
+   font-size: 1.8rem;
 }
 
-.barraMenu li a:hover{
-    background-color: rgb(63, 48, 48);
+.navbar li a:hover{
+    background-color: rgba(128, 128, 128, 0.301);
 }
    
 /** BARA DE NAVEGACION **/
@@ -163,7 +162,11 @@ header img{
 /** MAIN **/
 .maincontainer{
     width: 100%;
-
+    flex-wrap: wrap;
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   align-content: flex-end;
 }
 
 
@@ -200,26 +203,13 @@ footer{
     color: cornsilk;
     width: 100%;
     font-size: 15px;
+   
 }
 
 
-footer ul{
-    list-style-type: none;
-
-}
-
-.piepagina{
-    text-align: center; 
-    background:black;
-    bottom: 0; 
-    margin: 5px; 
-    width: 100%; 
-    font-size: 13px; 
-    margin-top: 10px; 
-    color: white;
-}
 
 /** PIE DE PAGINA **/
+
 
 
 -------- GALERIA ---------
@@ -530,19 +520,20 @@ thead{
 
 /** CARTA MENU **/
 
-
 ------------ UBICACION ---------
 iframe{
-    padding-left: 600px;
+    padding-left: 80px;
 }
-
+.menuCinco{
+    display: flex;
+    justify-content: space-around;
+}
 
 
 .mapa{
-  margin-bottom: 80px;
+  margin-bottom: 60px;
     align-content: center;
 }
-
 
 /** PAGINA PRINCIPAL **/
 /** DISPOSITIVO MOVIL **/
@@ -1081,8 +1072,8 @@ main p{
 
     .grilla{
         grid-template-columns: 100%;
-        grid-template-rows:8% 10% 70% 10%;
-        grid-template-areas: "barraMenu"
+        grid-template-rows:10% 70% 10%;
+        grid-template-areas: 
                              "header"
                             "menutres"
                             "pieDePagina";
@@ -1106,18 +1097,18 @@ main p{
     
     
     .gallery__item:nth-child(1){
-       grid-row-start: span 4;
-       grid-column-start: span 4;
+       grid-row-start: span 3;
+       grid-column-start: span 3;
    }
    
    .gallery__item:nth-child(2){
-       grid-row-start: span 4;
-       grid-column-start: span 4;
+       grid-row-start: span 3;
+       grid-column-start: span 3;
    }
    
    .gallery__item:nth-child(3){
-       grid-row-start: span 4;
-       grid-column-start: span 4;
+       grid-row-start: span 3;
+       grid-column-start: span 3;
    }
    
     .gallery__item:nth-child(4){
@@ -1125,7 +1116,7 @@ main p{
    }
    
    .gallery__item:nth-child(5){
-       grid-row-start: span 4;
+       grid-row-start: span 3;
        grid-column-start: span 3;
    }
    
@@ -1140,17 +1131,17 @@ main p{
    
    .gallery__item:nth-child(8){
        grid-row-start: span 3;
-       grid-column-start: span 4;
+       grid-column-start: span 3;
    }
    
    .gallery__item:nth-child(9){
-       grid-column-start: span 4;
+       grid-column-start: span 3;
        grid-row-start: span 3;
    }
    
    .gallery__item:nth-child(10){
-    grid-column-start: span 4;
-    grid-row-start: span 4;
+    grid-column-start: span 3;
+    grid-row-start: span 3;
   }
 }
 
@@ -1287,39 +1278,6 @@ main p{
  } 
     
 
-/** ESCRITORIO NOTEBOOK **/
-@media (min-width: 1024px){
-    .main-conteiner{ 
-        grid-template-columns: repeat(5, 1fr);
-
-    } 
-    .grillaCuatro{ 
-        grid-template-columns: 50% 50%; 
-        grid-template-rows:10% 20% 60% 10%; 
-        grid-template-areas:"barraMenu"
-                            "header" 
-                            "menuCuatro"
-                            "piePagina"; 
-      }   
-      .barraMenu{
-          grid-area: nav;
-      }                
-      .header{
-          grid-area: header;
-      }
-      .menuCuatro{
-          grid-area: main;
-      }
-      .pieDePagina{
-          grid-area: footer;
-      }
-      .table{
-        margin: 20%;
-        grid-column-start: span 2; 
-        grid-row-start: span 2;
-      }
-}
-
 /** UBICACION** 
 /** DISPOSITIVO MOVIL **/
 
@@ -1425,35 +1383,7 @@ main p{
         grid-row-start: span 3;
     }
 }
-/** ESCRITORIO NOTEBOOK **/
 
-@media (min-width: 1024px){
-    .mapa{ 
-        grid-template-columns: repeat(4, 1fr);  
-    } 
-    .grillaCinco{
-        grid-template-columns: 100%; 
-        grid-template-rows: 10% 80% 15%; 
-        grid-template-areas:
-                             "header" 
-                            "menuCinco"
-                            "pieDePagina"; 
-      }  
-    .header{
-        grid-area: header;
-    } 
-    .menuCinco{
-        grid-area: main;
-    }
-    .pieDePagina{
-        grid-area: footer;
-    }
-    .mapa{
-       grid-column-start: span 4;
-       grid-column-start: span 4;
-       
-    }
-}
 
 /** CONTACTO **/
 /** DISPOSITIVO MOVIL **/
@@ -1539,39 +1469,5 @@ main p{
     .formContacto{
         grid-column-start: span 3;
         grid-row-start: span 3 ;
-    }
-}
-
-/** ESCRITORIO, NOTEBOOK **/
-@media (min-width:1024px){
-    .contact_wrapper{
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .grillaSies{
-        grid-template-columns: 100%;
-        grid-template-rows:8% 10% 70% 10%;
-        grid-template-areas: "barraMenu"
-                             "header"
-                            "section"
-                            "pieDePagina";
-      }                  
-
-     .barraMenu{
-         grid-area: main;
-     }
-     .header{
-         grid-area: header;
-     }
-     .section{
-         grid-area: section;
-     }
-    .pieDePagina{
-        grid-area: footer;
-    }   
-
-    .formContacto{
-        grid-column-start: span 3;
-        grid-row-start: span 3;
     }
 }

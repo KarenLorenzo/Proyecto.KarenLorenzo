@@ -7,21 +7,45 @@
     <title>Bodegon- El Farol</title> 
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=Dancing+Script:wght@600&family=Lobster&family=Montserrat:ital,wght@1,200&family=Poppins:wght@300&family=Raleway:wght@100&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/style.css"> 
-</head> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head> 
 <body> 
     <div class="grillaUno">
-    <nav class="barraMenu"> 
-        <ul> 
-    <li><a href="index.html">Inicio</a></li> 
-    <li><a href="paginas/nosotros.html">Nosotros</a></li> 
-    <li><a href="paginas/galeria.html">Galeria</a></li> 
-    <li><a href="paginas/carta.html">Carta</a></li> 
-    <li><a href="paginas/comollegar.html">¿Como llego?</a></li> 
-    <li><a href="paginas/contacto.html">Contacto</a></li> 
-      </ul> 
-      </nav>       
-
     <header class="header"> 
+      <div class="container-fluid navbar navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg container"> 
+            <div class="container-fluid"> 
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> 
+                <span class="navbar-toggler-icon"></span> 
+              </button> 
+              <div class="collapse navbar-collapse" id="navbarNav"> 
+                <ul class="navbar-nav ml-auto"> 
+                  <li class="nav-item"> 
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a> 
+                  </li> 
+                  <li class="nav-item"> 
+                    <a class="nav-link" href="paginas/nosotros.html">Nosotros</a> 
+                  </li> 
+                  <li class="nav-item"> 
+                    <a class="nav-link" href="paginas/carta.html">Carta</a> 
+                  </li> 
+                  <li class="nav-item"> 
+                    <a class="nav-link" href="paginas/galeria.html">Galeria</a> 
+                  </li> 
+                  <li class="nav-item"> 
+                    <a class="nav-link" href="paginas/comollegar.html">Ubicacion</a> 
+                  </li> 
+                    <li class="nav-item"> 
+                        <a class="nav-link" href="paginas/contacto.html">Contacto</a> 
+                      </li> 
+                </ul>
+              </div> 
+            </div> 
+          </nav> 
+      </div> 
         <h1 class="lines-effect">Bodegon El farol</h1> 
     </header> 
 
@@ -34,27 +58,55 @@
 
           <div class="text"> 
             <h2>Hace tu pedido por WhatsApp y 
-                retira tu almuerzo listo y sin esperar!</h2> 
-            <button>11 4088 2263</button> 
+                retira tu almuerzo listo y sin esperar!
+                <br>
+            <button>11 4088 2263</button> </h2>
             </div> 
             </div>
         </main> 
  
 
-    <footer class="pieDePagina"> 
-        <p class="datos">Datos de contacto</p> 
-        <ul> 
-            <li>Direccion: Terrada 2052</li> 
-            <br>
-            <li>Telefono: (011) 4583-5816</li> 
-            <br>
-            <li>Horario de atencion: LUNES- SABADOS 12:00-15:30 
-                20:00-23:30 
-            </li> 
-        </ul> 
-
-      <p class="piepagina"> Vida MRR © Derechos Reservados KL </p> 
-    </footer>
+        <footer class="bg-dark text-white pt-5 pb-4">
+          <div class="col-md-4 col-lh-3 col-xl-3 mx-auto mt-3">
+              <h3 class="text-uppercase mb-4 font-weight-bold text-warning">Datos de contacto</h3>
+           <p>
+               <i class="fas fa-home mr3"></i>Direccion: Terrada 2052
+           </p>
+           <p>
+              <i class="fas fa-phone mr3"></i>Telefono: (011) 4583-5816
+          </p>
+          <p>
+              <i class="fas fa-home mr3"></i>Horario de atencion: LUNES- SABADOS 12:00-15:30 
+              20:00-23:30 
+          </p>
+  
+          <hr class="mb-4">
+          <div class="row aling-items-center">
+             <div class="col-md-7 col-lg-8">
+           <p> Vida MRR © Derechos Reservados
+               <a href="#" style="text-decoration: none;">
+                   <strong class="text-warning">KL</strong>
+               </a>
+           </p>
+             </div>
+             <DIV class="col-md-5 col-lg-4">
+                 <div class="text-center text-md-right">
+                     <ul class="list-unstyled list-inile"></ul>
+                     <li class="list-inline-item">
+                         <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"> <i class="fab fa-facebook"></i></a>
+                     </li>
+                     <li class="list-inline-item">
+                      <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"> <i class="fab fa-instagram"></i></a>
+                  </li>
+                  <li class="list-inline-item">
+                      <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"> <i class="fab fa-google-plus"></i></a>
+                  </li>
+                     
+                 </div>
+             </DIV>
+          </div>
+          </div>
+      </footer>
     </div> 
 </body> 
 </html> 
