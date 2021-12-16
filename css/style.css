@@ -6,7 +6,6 @@
 body{
     text-align: center;
     position: relative;
-    
 }
 /** HEADER **/
 .lines-effect{
@@ -54,10 +53,7 @@ body{
 
 
 /** MAIN **/
-.contenedor{
-    grid-template-columns: repeat(4, 1fr);
 
-}
 
 .text h2{
     font-size: 30px;
@@ -67,7 +63,6 @@ body{
    margin: 20px;
    margin-top: 20%;
    border: 2px solid black;
-
 }
 
 .texto{
@@ -81,11 +76,13 @@ body{
     color:rgb(73, 0, 0);
     height: 30%;
     margin-top: 20%;
+   
+    
 }
 
 .aviso{
-    width: 700px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     float: left;
     object-fit: cover;
     border-radius: 50%;
@@ -95,7 +92,6 @@ body{
 .text{
     font-size: 30px;
     margin: 50px;
-    width: 90%;
 }
 
 button{
@@ -119,19 +115,12 @@ button{
 
 /** BARRA DE NAVEGACION **/   
 
-
-
-.navbar li{
-     float: right;
-}
-
 .navbar ul{
     font-family: 'Cormorant Garamond', serif;
     list-style-type: none;
     margin: 0px;
     padding: 0px;
-    display: flex;
-    justify-content: right;
+  
 }
 
 .navbar a{
@@ -152,12 +141,10 @@ button{
 
 header img{
     height: 60px;
-    width: 50;
+    width: 60px;
 }
 
-.logo{
-    margin: 55px;
-}
+
 
 /** MAIN **/
 .maincontainer{
@@ -191,11 +178,6 @@ main p{
 
 /** MAIN **/
 
-.datos{
-    background: black;
-    color: white;
-    font-size: 16px
-}
 
 footer{
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
@@ -231,7 +213,7 @@ h1{
 /** TITULO **/
 
 .gallery-container{
-    display: grid;
+   display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 150px;
     padding: 20px;
@@ -346,125 +328,74 @@ main p{
    display: block;
     color:rgb(70, 3, 3);
 }
-.contact_wrapper{
-    display: flex;
-    justify-content: center;
-    align-content: flex-end;
-    align-items: center;
-    flex-direction: column;
+.contenedor .form .form-header .form-title {
+    font-weight: normal;
+    font-family: sans-serif;
+    color: #ff851b;
+    text-align: center;
+    padding: 14px 0;
 }
- 
-.contact_form{  
-    display: flex;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    gap: 20px;
-    width: auto; 
-    height: auto;
-    margin-bottom: 60px;
-    border-radius: 10px;  
-    padding-top: 30px;
-    padding-bottom: 20px;  
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
-    padding-left: 18px; 
-    padding-right: 19px;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .contact_form .box{
-      position: relative;
-     width: 10%;
-      padding: 10px;
-  }
-  
-  input{
-    background-color: #fbfbfb; 
-    width: 408px; 
-    height: 40px; 
-    border-radius: 5px;  
-    border-style: solid; 
-    border-width: 1px; 
-    border-color: #380606; 
-    margin-top: 10px;  
-    padding-left: 10px;
-    margin-bottom: 20px; 
-  }
-  
-  
-  textarea{
-    background-color: #fbfbfb; 
-    width: 405px; 
-    height: 150px; 
-    border-radius: 5px;  
-    border-style: solid; 
-    border-width: 1px; 
-    border-color: #350808; 
-    margin-top: 10px;  
-    padding-left: 10px;
-    margin-bottom: 20px; 
-    padding-top: 15px; 
-  }
-  
-  
-  label{
-    display: block; 
-    float: center; 
-  }
-  
-  
-  .btn{
-    height: 45px; 
-    padding-left: 5px;
-    padding-right: 5px;   
-    margin-bottom: 20px; 
-    margin-top: 10px;   
-    text-transform: uppercase;
-    background-color: #5e121298; 
-    border-color: #3b0707; 
-    border-style: solid; 
-    border-radius: 10px;  
-    width: 420px;   
-    cursor: pointer;
-  }
-  
-  
-  button p{
-    color: #fff; 
-  }
-  
 
-  
-  .formContacto{
-    font-size: 45px;  
-    text-align: letf; 
-    padding-bottom: 20px; 
-    color: #7e0909;
-    font-family: 'Dancing Script', cursive;
-  }
-  
-  
-  
-  ::-webkit-input-placeholder {
-   color: #a8a8a8;
-  }
-  
-  
-  ::-webkit-textarea-placeholder {
-   color: #a8a8a8;
-  }
-  
-  
-  .formulario input:focus{
-    outline:0;
-    border: 1px solid #97d848;
-  }
-  
-  
-  .textarea:focus{
-    outline:0;
-    border: 1px solid #97d848;
-  }
+.contenedor .form .form-header .form-title span {
+  color: #fff;
+}
+
+.contenedor .form {
+background: rgba(0,0,0,.6);
+width: 90%;
+max-width: 780px;
+margin: auto;
+padding: 5px 35px;
+margin-top: 100px;
+margin-bottom: 70px;
+padding-bottom: 30px;
+border-radius: 3px;
+}
+
+.contenedor .form .form-label {
+display: block;
+color: #ff851b;
+font-size: 16px;
+font-family: Roboto;
+position: relative;
+
+}
+
+.contenedor .form .form-input, .form-textarea {
+     background: rgba(0,0,0,.7);
+     border: none;
+     outline: none;
+     border-bottom: 2px solid #ff851b;
+     width: 100%;
+     padding: 12px;
+     margin-bottom: 20px; 
+     border-radius: 2px;
+     font-size: 14px;
+     color: #fff;
+    font-family: Roboto;
+}
+
+.contenedor .form .form-textarea{
+resize: vertical;
+min-width: 50px;
+}
+
+.contenedor .form .btn-submit{
+width: 100%;
+font-family: Roboto;
+outline: none;
+background:#ff851b;
+font-size: 16px;
+border: none;
+color: #fff;
+padding: 15px 0;
+cursor: pointer;
+transition: all .5s ease;
+}
+
+.contenedor .form .btn-submit:hover{
+   background: #F29718;
+}
 
 
 
@@ -477,14 +408,6 @@ main p{
     text-align: center;
 }
 
-.cartaFondo{
-    background-image: url(../imagenes/menu-.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    
-}
 
 .main-conteiner{
     margin: auto;
@@ -503,6 +426,7 @@ table{
 td{
     padding: 12px;
     font-size: 20px;
+    color: black;
 }
 
 tr:nth-child(even){
@@ -538,95 +462,6 @@ iframe{
 /** PAGINA PRINCIPAL **/
 /** DISPOSITIVO MOVIL **/
 
-@media (max-width: 600px){
-    .contenedor{ 
-        grid-template-columns: repeat(3. 1fr);
-    } 
-    .grillaUno{ 
-        grid-template-columns: 100%; 
-        grid-template-rows:  10% 70% 10%; 
-        grid-template-areas:
-                            "menuUno"
-                            "pieDePagina"; 
-      }     
-      .menuUno{
-          grid-area: main;
-      }
-
-    .texto{
-        grid-column: 2/3; 
-        grid-row: 1/3;
-       
-    }
-    .pieDePagina{
-        grid-area: footer;
-    }
-    .texto {
-        font-size: 20px;
-    }
-
-    .text h2 {
-        font-size: 20px;
-    }
-
-    .text {
-        width: 100%;
-    }
-
-    .text button {
-        font-size: 15px;
-    }
-
-}
-
-@media (min-width: 600px){
-    .contenedor{ 
-        grid-template-columns: repeat(3. 1fr);
-        gap: 10px;   
-
-    } 
-    .grillaUno{ 
-        grid-template-columns: 100%; 
-        grid-template-rows: 10% 80%; 
-        grid-template-areas:"header" 
-                            "menuUno"; 
-      }                   
-      .texto{
-        grid-column: 2/3; 
-        grid-row: 1/3;
-       
-    }
-}
-
-/** DISPOSITIVO MEDIO **/
-@media (min-width: 768px){
-    .contenedor{ 
-        width: 100%;
-        grid-template-columns: repeat(3, 1fr);
-        align-content: center;
-        align-items: center;
-        justify-content: center;
-
-    } 
-    .grillaUno{ 
-        grid-template-columns: 100%; 
-        grid-template-rows: 10% 80%; 
-        grid-template-areas:"header" 
-                            "menuUno"; 
-      }  
- 
-    .aviso{
-        grid-column-start: span 3;
-        grid-row-start: span 3;
-    }
-    .menuUno{
-        grid-template-areas: main;
-    }
-    .texto{
-        align-items: center;
-        
-    }
-}
 
 /** ESCRITORIO NOTEBOOK **/
 @media (min-width: 1024px){
@@ -868,7 +703,7 @@ main p{
     }
     
      .gallery__item:nth-child(4){
-        grid-column-start: span 2;
+        grid-column-start: span 3;
         grid-row-start: span 3;
     }
     
@@ -891,11 +726,13 @@ main p{
     }
     
     .gallery__item:nth-child(9){
-        grid-column-start: span 2;
+        grid-column-start: span 3;
+        grid-row-start: span 3;
     }
     
     .gallery__item:nth-child(10){
-        grid-column-start: span 2;
+        grid-column-start: span 3;
+        grid-row-start: span 3;
 
     }
 }
@@ -1388,12 +1225,6 @@ main p{
 /** CONTACTO **/
 /** DISPOSITIVO MOVIL **/
 @media (max-width:600px){
-    .contact_wrapper{
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        grid-template-columns: repeat(3. 1fr);
-    }
 
     .grillaSies{
         grid-template-columns: 100%;
@@ -1415,10 +1246,7 @@ main p{
 
 
 @media (min-width:600px){
-      .contact_wrapper{
-        grid-template-columns: repeat(2fr, 1fr);
-    
-    }
+
 
     .grillaSies{
         grid-template-columns: 100%;
@@ -1445,9 +1273,7 @@ main p{
 
 /** DISPOSITIVOS MEDIOS **/
 @media (min-width:768px){
-     .contact_wrapper{
-         grid-template-columns: repeat(3, 1fr);
-        }
+   
 
         .grillaSies{
             grid-template-columns: 50% 50%;

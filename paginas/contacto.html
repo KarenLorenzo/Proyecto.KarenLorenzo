@@ -19,39 +19,38 @@
 
      <!-- LOGO -->
     <header class="headerSeis">
-      <div class="container-fluid navbar navbar-dark bg-dark">
-        <nav class="navbar navbar-expand-lg container"> 
-            <div class="container-fluid"> 
-              
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> 
-                <span class="navbar-toggler-icon"></span> 
-              </button> 
-              <div class="collapse navbar-collapse" id="navbarNav"> 
-                <ul class="navbar-nav mr-auto"> 
-                  <li class="nav-item"> 
-                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a> 
-                  </li> 
-                  <li class="nav-item"> 
-                    <a class="nav-link" href="nosotros.html">Nosotros</a> 
-                  </li> 
-                  <li class="nav-item"> 
-                    <a class="nav-link" href="carta.html">Carta</a> 
-                  </li> 
-                  <li class="nav-item"> 
-                    <a class="nav-link" href="galeria.html">Galeria</a> 
-                  </li> 
-                  <li class="nav-item"> 
-                    <a class="nav-link" href="comollegar.html">Ubicacion</a> 
-                  </li> 
-                    <li class="nav-item"> 
-                        <a class="nav-link" href="contacto.html">Contacto</a> 
-                      </li> 
-                </ul>
-              </div> 
-            </div> 
-          </nav> 
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="../imagenes/logo.png" alt="logo" width="150">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="carta.html">Carta</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="comollegar.html">Ubicacion</a>
+            </li>
+        </div>
+      </nav>
       </div> 
-        <img src="../imagenes/img-removebg-preview.png" alt="logo">
+       
      </header>
      <!-- LOGO -->
 
@@ -65,34 +64,27 @@
 
 
       <!-- FORMULARIO DE CONTACTO -->
-      <div class="contact_wrapper">
-      <section class="contact_form" >  
-        <form action="">
-            <h2 class="formContacto">Formulario de contacto</h2>
-            <div class="box">
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombreUsuario" placeholder=" Escribe tu nombre">
-            </div>
-            <div class="box">
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" id="apellido" placeholder="Apellido">
-            </div>
-            <div class="box">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="E-mail" placeholder="Email">
-            </div>
-            <div class="box">
-            <label for="telefono">Telefono</label>
-            <input type="tel" name="telefono" id="telefono" placeholder="Telefono">
-             </div>
-            <label for="mensaje">Mensaje</label>
-            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
-            <P class="botton-btn">
-            <input type="submit" class="btn" value="Enviar">
-            </P>
-        </form>
-      </section>
-    </div>
+      <div class="contenedor">
+        <form action="" class="form"> 
+        <div class="form-header">
+          <h1 class="form-title">F<span>ormulario de contacto</span></h1>
+        </div>
+  
+        <label for="nombre" class="form-label">Nombres:</label>
+        <input type="text" id="nombre" class="form-input" placeholder="Escriba su nombre">
+  
+        <label for="direccion" class="form-label">Direccion:</label>
+        <input type="text" class="form-input" id="direccion" placeholder="Escriba su direccion">
+  
+        <label for="correo" class="form-label">Correo Electronico:</label>
+        <input type="email" class="form-input" id="correo" placeholder="Escriba su correo">
+        
+        <label for="mesanje" class="form-label"> Mensaje</label>
+        <textarea id="mensaje" class="form-textarea" placeholder="Aqui escriba su mensaje"></textarea>
+      
+        <input type="submit" class="btn-submit" value="Enviar Consulta">
+      </form>
+      </div>
    <!-- FORMULARIO DE CONTACTO-->
 
 
