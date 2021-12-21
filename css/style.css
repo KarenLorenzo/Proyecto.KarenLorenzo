@@ -1,205 +1,113 @@
-*{
-    margin: 0;
-    padding: 0;
-}
 
-body{
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #5a5a5a;
     text-align: center;
-    position: relative;
-}
-/** HEADER **/
-.lines-effect{
-    font-size: 100px;
-   display: inline-block;
-    color: rgb(71, 0, 0);
-    position: relative;
-    font-family: 'Dancing Script', cursive;
-    padding: 90px;
-}
-
-
-.lines-effect::after, .lines-effect::before{
-    content: '' ;
+  }
+  
+  
+  /* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+  
+  /* Carousel base class */
+  .carousel {
+    margin-bottom: 4rem;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 32rem;
+  }
+  .carousel-item > img {
     position: absolute;
-    width: 130px;
-    height: 2px;
-    background-color: rgb(131, 60, 60);
-    top: 1.5em;
-    transform: scale(0);
-    transition: all 0.2s ease-in;
-}
-
-.lines-effect:hover::before, .lines-effect:hover::after{
-    transform: scale(2);
-}
-
-.lines-effect::before{
-    left: -110px;
-}
-
-.lines-effect::after{
-    right: -110px;
-}
-
-body{
-    background-image:url(../imagenes/fotoContacto.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-}
-
-/** HEADER **/
-
-
-/** MAIN **/
-
-
-.text h2{
-    font-size: 30px;
-    padding: 30px 0;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+  }
+  
+  
+  /* MARKETING CONTENT
+  -------------------------------------------------- */
+  
+  /* Center align the text within the three columns below the carousel */
+  .marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
     text-align: center;
-   color: rgb(90, 0, 0);
-   margin: 20px;
-   margin-top: 20%;
-   border: 2px solid black;
-}
-
-.texto{
-    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1));
-    font-size: 30px;
-    font-weight: 20px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    padding: 4px;
-    display: block;
-    color:rgb(73, 0, 0);
-    height: 30%;
-    margin-top: 20%;
-   
-    
-}
-
-.aviso{
-    width: 500px;
-    height: 500px;
-    float: left;
-    object-fit: cover;
-    border-radius: 50%;
-   margin-top: -10%;
-}
-
-.text{
-    font-size: 30px;
-    margin: 50px;
-}
-
-button{
-    background:  linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.3));
-    padding: 15px 20px;
-    letter-spacing: 3px;
-    font-size: 16px;
-    text-decoration: none;
-    overflow: hidden;
-    transition: 0.2s;
-    color: rgb(51, 0, 0);
-}
-
- .text button:hover {
-    background: #5208087c;
-     padding: 15px 20px;
-     box-shadow: 0 0 10px #5208087e, 0 0 40px #520808, 0 0 80px #520808; 
-}
-/** MAIN  **/
+  }
+  .marketing h2 {
+    font-weight: 400;
+  }
+  /* rtl:begin:ignore */
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+  /* rtl:end:ignore */
+  
+  
+  /* Featurettes
+  ------------------------- */
+  
+  .featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+  
+  /* Thin out the marketing headings */
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    /* rtl:remove */
+    letter-spacing: -.05rem;
+  }
+  
+  
+  /* RESPONSIVE CSS
+  -------------------------------------------------- */
+  
+  @media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
 
 
 /** BARRA DE NAVEGACION **/   
 
-.navbar ul{
-    font-family: 'Cormorant Garamond', serif;
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-  
-}
-
-.navbar a{
-   color: rgb(255, 238, 238);
-   text-align: center;
-   text-decoration: none;
-   padding: 3px 10px;
-   font-size: 1.8rem;
-}
-
-.navbar li a:hover{
-    background-color: rgba(128, 128, 128, 0.301);
-}
    
 /** BARA DE NAVEGACION **/
  
------------- NOSOTROS -----------
-
-header img{
-    height: 60px;
-    width: 60px;
-}
-
-
-
-/** MAIN **/
-.maincontainer{
-    width: 100%;
-    flex-wrap: wrap;
-   display: flex;
-   justify-content: center;
-   align-items: flex-start;
-   align-content: flex-end;
-}
-
-
-
-main p{
-    margin-top: 60px;
-    font-size: 30px;
-    font-weight: 50px;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    padding: 50px;
-   display: block;
-    color:rgb(70, 3, 3);
-}
-
- .restaurante{
-    object-fit: cover;
-    margin-top: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-/** MAIN **/
-
-
-footer{
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
-    margin-top: 50px;
-    color: cornsilk;
-    width: 100%;
-    font-size: 15px;
-   
-}
-
-
-
-/** PIE DE PAGINA **/
-
-
 
 -------- GALERIA ---------
 
 /** TITULO **/
 
 .titulPrincipal{
-     text-align: center;
+     text-align: center; 
 }
 
 h1{
@@ -207,94 +115,6 @@ h1{
     font-size: 50px;
     padding: 50px;
     color: rgb(56, 2, 2);
-}
-
-
-/** TITULO **/
-
-.gallery-container{
-   display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 150px;
-    padding: 20px;
-    grid-gap: 10px;
-    font-family: 'Montserrat', sans-serif;
-    grid-auto-flow: dense;
-}
-
-.gallery__img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.gallery__item{
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(56, 2, 2);
-    transition: transform 0.3s ease-in-out;
-}
-
-.gallery__item:hover{
-    filter: opacity(0.9);
-    transform: scale(1.04);
-}
-
-.gallery__title{
-      position: absolute;
-      bottom: 0;
-      color: white;
-      background: linear-gradient(rgba(14, 0, 0, 0.1),rgba(0,0,0,1));
-      width: 100%;
-      margin: 0;
-      padding: 10px;
-}
-
-.gallery__item:nth-child(1){
-    grid-row-start: span 3;
-    grid-column-start: span 3;
-}
-
-
-.gallery__item:nth-child(2){
-    grid-row-start: span 3;
-}
-
-
-.gallery__item:nth-child(3){
-    grid-row-start: span 2;
-}
-
-.gallery__item:nth-child(4){
-    grid-row-start: span 3;
-}
-
-.gallery__item:nth-child(5){
-    grid-row-start: span 3;
-}
-
-.gallery__item:nth-child(6){
-    grid-row-start: span 2;
-}
-
-.gallery__item:nth-child(7){
-    grid-row-start: span 3;
-}
-
-.gallery__item:nth-child(8){
-    grid-row-start: span 3;
-    grid-column-start: span 3;
-}
-
-
-.gallery__item:nth-child(9){
-    grid-row-start: span 2;
-}
-
-.gallery__item:nth-child(10){
-    grid-row-start: span 3;
-    grid-column-start: span 3;
 }
 
 
@@ -315,9 +135,6 @@ main p{
 
 
 /** FORMULARIO **/
-
-
-
 .subtitulo{
     margin-top: 60px;
     font-size: 30px;
@@ -459,841 +276,8 @@ iframe{
     align-content: center;
 }
 
-/** PAGINA PRINCIPAL **/
-/** DISPOSITIVO MOVIL **/
 
 
-/** ESCRITORIO NOTEBOOK **/
-@media (min-width: 1024px){
-    .contenedor{ 
-        grid-template-columns: repeat(4. 1fr);
-    } 
-    .grillaUno{ 
-        grid-template-columns: 100%; 
-        grid-template-rows: 80% 10%; 
-        grid-template-areas: "menuUno"
-                            "pieDePagina"; 
-      }  
 
 
-    .menuUno{
-        grid-template-areas: main;
-    }
-    .texto{
-        align-items: center;
-        grid-column-start: span 1;
-        grid-row-start: span 4;
-    }
 
-    .text{
-        grid-column-start: span 4;
-        grid-row-start: span 4;
-    }
-    .pieDePagina{
-        grid-area: footer;
-    }
-}
-
-/** NOSOTROS **/
-
-/** INICIO DE MEDIA QUERY **/
-
-/** DISPOSITIVO MOVIL **/
-
-@media (max-width:600px){
-    .maincontainer{
-        grid-template-columns: repeat(2, 1fr); 
-    }
-
-    .grillaDos{
-        grid-template-columns: 100%;
-        grid-template-rows: 30% 50% 10%;
-        grid-template-areas: "header"
-                            "menuDos"
-                            "pieDePagina";
-                
-      }   
-      .header{
-          grid-area: header;
-      }
-
-      
-      .menuDos{
-        grid-area: main;
-    }
-    .pieDePagina{
-        grid-area: footer;
-    }
-
-    .restaurante{
-        grid-row-start: span 2;
-        grid-column-start: span 2;
-    }
-   
-    main p{
-        grid-row-start: span 2;
-    }
-}
-
-/** DISPOSITIVO MOVIL **/
-@media (min-width:600px){
-    .maincontainer{
-      grid-template-columns: repeat(3. 1fr);
-  }
-
-  .grillaDos{
-      grid-template-columns: 100%;
-      grid-template-rows: 10% 60% 10%;
-      grid-template-areas:"header"
-                          "menuDos"
-                          "pieDePagina";
-                        
-    }                  
-
-   .header{
-       grid-area: header;
-   }
-  
-  .menuDos{
-      grid-area: main;
-  }
-  
-  .pieDePagina{
-      grid-area: footer;
-  }
-  .restaurante{
-    grid-row-start: span 3;
-    grid-column-start: span 3;
-  }
-
-main p{
-    grid-row-start: span 3;
-   }
-}
- 
-/** DISPOSITIVOS MEDIOS **/
-@media (min-width:768px){
-    .maincontainer{
-        grid-template-columns: repeat(4, 1fr);
-       }
-
-       .grillaDos{
-           grid-template-columns: 100%;
-           grid-template-rows: 10% 70% 10%;
-           grid-template-areas: 
-                                "header"
-                               "menuDos"
-                               "pieDePagina";
-         }                  
-   
-       
-       .header{
-           grid-area: header;
-       }
-           
-       .menuDos{
-           grid-area: main;
-       }
-       
-       .pieDepagina{
-           grid-area: footer;
-       }
-
-       .restaurante{
-        grid-row-start: span 4;
-        grid-column-start: span 4;
-    }
-    
-    main p{
-        grid-row-start: span 3;
-       }
-}
-
-/** ESCRITORIO, NOTEBOOK **/
-@media (min-width:1024px){
-    .maincontainer{
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .grillaDos{
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 30% 10% 60% 10%;
-        grid-template-areas: "header header"
-                            "barraMenu  barraMenu"
-                             "menuDos menuDos"
-                             "pieDepagina pieDPagina";
-      }                  
-
-    .header{
-        grid-area: header;
-    }
-    .barraMenu{
-        grid-area: nav;
-    }
-    
-    .menuDos{
-        grid-area: main;
-    }
-   .pieDePagina{
-       grid-area: footer;
-   }
-   
-   .restaurante{
-    grid-row-start: span 5;
-    grid-column-start: span 5;
-  }
-}
-
- /** FIN DE MEDIA QUERY **/
-    
- /** GALERIA **/
-
-/** DISPOSITIVO MOVIL **/
-@media (max-width:600px){
-    .gallery-container{
-        grid-template-columns: repeat(3. 1fr);
-        gap: 10px;  
-        
-    }
-
-    .grilla{
-        grid-template-columns: 100%;
-        grid-template-rows: 30% 10% 50% 10%;
-        grid-template-areas: "header"
-                             "barraMenu"
-                            "menutres"
-                            "pieDePagina";
-      }                  
-    .header{
-        grid-area: header;
-    }
-    
-    ul{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .barraMenu{
-        grid-area: nav;
-    }
-        
-    .menutres{
-        grid-area: main;
-    }
-    
-    .pieDePagina{
-        grid-area: footer;
-        grid-row: 8/9;  
-    }
-
-    .gallery__item:nth-child(1){
-        grid-row-start: span 3;
-        grid-column-start: span 3;
-    }
-    
-    .gallery__item:nth-child(2){
-        grid-row-start: span 3;
-        grid-column-start: span 3;
-    }
-    
-    .gallery__item:nth-child(3){
-        grid-row-start: span 3;
-        grid-column-start: span 3;
-    }
-    
-     .gallery__item:nth-child(4){
-        grid-column-start: span 3;
-        grid-row-start: span 3;
-    }
-    
-    .gallery__item:nth-child(5){
-        grid-row-start: span 3;
-        grid-column-start: span 3;
-    }
-    
-    .gallery__item:nth-child(6){
-        grid-column-start: span 3;
-    }
-    .gallery__item:nth-child(7){
-        grid-row-start: span 3;
-        grid-column-start: span 3;
-    }
-    
-    .gallery__item:nth-child(8){
-        grid-row-start: span 3;
-        grid-column-start: span 3;
-    }
-    
-    .gallery__item:nth-child(9){
-        grid-column-start: span 3;
-        grid-row-start: span 3;
-    }
-    
-    .gallery__item:nth-child(10){
-        grid-column-start: span 3;
-        grid-row-start: span 3;
-
-    }
-}
-
-
-@media (min-width:600px){
-      .gallery-container{
-        grid-template-columns: repeat(3. 1fr);
-        gap: 10px;  
-    }
-
-    .grilla{
-        grid-template-columns: 100%;
-        grid-template-rows: 10% 20% 60% 10%;
-        grid-template-areas: "barraMenu"
-                             "header"
-                            "menuTres"
-                            "pieDePagina";
-      }                  
-    .barraMenu{
-        grid-area: main;
-    }
-    
-    ul{
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        
-    }
-    
-    .header{
-        grid-area: header;
-    }
-        
-    .manuTres{
-        grid-area: main;
-    }
-    
-    .pieDePagina{
-        grid-area: footer;
-    }
-
-    .gallery__item:nth-child(1){
-        grid-row-start: span 3;
-        grid-column-start: span 3;
-    }
-    
-    .gallery__item:nth-child(2){
-        grid-row-start: span 3;
-        grid-column-start: span 3;
-    }
-    
-    .gallery__item:nth-child(3){
-        grid-row-start: span 3;
-        grid-column-start: span 3;
-    }
-    
-     .gallery__item:nth-child(4){
-        grid-column-start: span 3;
-        grid-row-start: span 3;
-    }
-    
-    .gallery__item:nth-child(5){
-      grid-row-start: span 3;
-        grid-column-start: span 3;
-    }
-    
-    .gallery__item:nth-child(6){
-        grid-column-start: span 3;
-    }
-    .gallery__item:nth-child(7){
-        grid-row-start: span 3;
-        grid-column-start: span 3;
-    }
-    
-    .gallery__item:nth-child(8){
-        grid-row-start: span 3;
-        grid-column-start: span 3;
-    }
-    
-    .gallery__item:nth-child(9){
-        grid-column-start: span 3;
-    }
-    
-    .gallery__item:nth-child(10){
-        grid-column-start: span 3;
-    }
-}
-
-/** DISPOSITIVOS MEDIOS **/
-@media (min-width:768px){
-     .gallery-container{
-         grid-template-columns: repeat(4, 1fr);
-         gap: 15px;
-        }
-
-        .grilla{
-            grid-template-columns: 50% 50%;
-            grid-template-rows: 30% 10% 60% 10%;
-            grid-template-areas:  "header header"
-                                 "barraMenu barraMenu"
-                                "menuTres menuTres"
-                                "pieDePagina pieDePagina";
-          }                  
-        
-        .header{
-            grid-area: header;
-        }
-     
-        .menutres{
-            grid-area: main;
-        }
-        
-        .pieDePagina{
-            grid-area: footer;
-            grid-row: 8/9;
-        }
-     
-     .gallery__item:nth-child(1){
-        grid-row-start: span 4;
-        grid-column-start: span 4;
-    }
-    
-    .gallery__item:nth-child(2){
-        grid-row-start: span 4;
-        grid-column-start: span 4;
-    }
-    
-    .gallery__item:nth-child(3){
-        grid-row-start: span 4;
-        grid-column-start: span 4;
-    }
-    
-     .gallery__item:nth-child(4){
-        grid-column-start: span 4;
-    }
-    
-    .gallery__item:nth-child(5){
-        grid-row-start: span 4;
-        grid-column-start: span 4;
-    }
-    
-    .gallery__item:nth-child(6){
-        grid-column-start: span 3;
-    }
-    .gallery__item:nth-child(7){
-        grid-row-start: span 3.5;
-        grid-column-start: span 3.5;
-    }
-    
-    .gallery__item:nth-child(8){
-        grid-row-start: span 3.5;
-        grid-column-start: span 3.5;
-    }
-    
-    .gallery__item:nth-child(9){
-        grid-column-start: span 4;
-    }
-    
-    .gallery__item:nth-child(10){
-        grid-column-start: span 3.5;
-    }
-    
-}
-
-/** ESCRITORIO, NOTEBOOK **/
-@media (min-width:1024px){
-    .gallery-container{
-        grid-template-columns: repeat(5, 1fr);
-        width: 90%;
-        margin: auto;
-        gap: 45px;
-    }
-
-    .grilla{
-        grid-template-columns: 100%;
-        grid-template-rows:10% 70% 10%;
-        grid-template-areas: 
-                             "header"
-                            "menutres"
-                            "pieDePagina";
-      }                  
-
-      .barraMenu{
-           grid-area: nav;
-      }
-    ul{
-        flex-direction: row;
-        align-items: center;
-    }
-    
-    .header{
-        grid-area: header;
-    }
-        
-    .menutres{
-        grid-area: main;
-    }
-    
-    
-    .gallery__item:nth-child(1){
-       grid-row-start: span 3;
-       grid-column-start: span 3;
-   }
-   
-   .gallery__item:nth-child(2){
-       grid-row-start: span 3;
-       grid-column-start: span 3;
-   }
-   
-   .gallery__item:nth-child(3){
-       grid-row-start: span 3;
-       grid-column-start: span 3;
-   }
-   
-    .gallery__item:nth-child(4){
-       grid-column-start: span 2;
-   }
-   
-   .gallery__item:nth-child(5){
-       grid-row-start: span 3;
-       grid-column-start: span 3;
-   }
-   
-   .gallery__item:nth-child(6){
-       grid-column-start: span 3;
-       grid-row-start: span 3;
-   }
-   .gallery__item:nth-child(7){
-       grid-row-start: span 3;
-       grid-column-start: span 3;
-   }
-   
-   .gallery__item:nth-child(8){
-       grid-row-start: span 3;
-       grid-column-start: span 3;
-   }
-   
-   .gallery__item:nth-child(9){
-       grid-column-start: span 3;
-       grid-row-start: span 3;
-   }
-   
-   .gallery__item:nth-child(10){
-    grid-column-start: span 3;
-    grid-row-start: span 3;
-  }
-}
-
-/** CARTA **/
-
-/** DISPOSITIVO MOVIL **/
-
-@media (max-width: 600px){
-    .main-conteiner{ 
-        grid-template-columns: repeat(3. 1fr);
-    } 
-    .grillaCuatro{ 
-        justify-content: center;
-        grid-template-columns: 100%; 
-        grid-template-rows:30% 10% 50% 10%; 
-        grid-template-areas: "header"
-                             "barraMenu"
-                             "menuCuatro"
-                             "pieDePagina"; 
-      } 
-      
-      .pieDepagina{
-          grid-area: footer;
-      }
-      .barraMenu{
-          grid-area: nav;
-      }
-
-      .header{
-          grid-area: header;
-      }
-
-      .menuCuatro{
-          grid-area: main;
-      }
-
-      .pieDePaginaCuatro{
-          grid-area: footer;
-      }
-      
-    table{
-        width: 20%;
-        background:  linear-gradient(rgba(102, 1, 1, 0.61), rgba(129, 0, 0, 0.514));
-        border-collapse: collapse;
-        color: burlywood;
-    
-    }
-    td{
-        padding: 12px;
-        font-size: 20px;
-    }
-    
-    tr:nth-child(even){
-        background-color: rgba(161, 46, 46, 0.199);
-    }
-    
-    thead{
-        background-color: linear-gradient(rgba(124, 53, 53, 0.7), rgba(146, 49, 49, 0.7));
-        color: white;
-        font-family: 'Dancing Script', cursive;
-        font-size: 60px;
-        text-align: center;
-        padding-left: 38%;
-    }
-} 
-
-      
-
-@media (min-width: 600px){
-    .main-conteiner{ 
-        grid-template-columns: repeat(3. 1fr);
-
-    } 
-    .grillaCuatro{ 
-        grid-template-columns: 100%; 
-        grid-template-rows:10% 20% 60% 10%; 
-        grid-template-areas:"barraMenu"
-                            "header" 
-                            "menuCuatro"
-                            "piePagina"; 
-      }   
-      .barraMenu{
-          grid-area: nav;
-      }                
-      .header{
-          grid-area: header;
-      }
-      .menuCuatro{
-          grid-area: main;
-      }
-      .pieDePagina{
-          grid-area: footer;
-      }
-      .table{
-        margin: 20%;
-        grid-column-start: span 3; 
-        grid-row-start: span 3; 
-       
-    }
-}
-
-/** DISPOSITIVO MEDIO **/
-@media (min-width: 768px){
-    .main-conteiner{ 
-        grid-template-columns: repeat(4, 1fr);
-
-    } 
-    .grillaCuatro{ 
-        grid-template-columns: 100%; 
-        grid-template-rows:10% 20% 60% 10%; 
-        grid-template-areas:"barraMenu"
-                            "header" 
-                            "menuCuatro"
-                            "piePagina"; 
-      }   
-      .barraMenu{
-          grid-area: nav;
-      }                
-      .header{
-          grid-area: header;
-      }
-      .menuCuatro{
-          grid-area: main;
-      }
-      .pieDePagina{
-          grid-area: footer;
-      }
-      .table{
-        margin: 20%;
-        grid-column-start: span 3; 
-        grid-row-start: span 3; 
-       
-    }
- } 
-    
-
-/** UBICACION** 
-/** DISPOSITIVO MOVIL **/
-
-@media (max-width: 600px){
-    .mapa{ 
-        margin-bottom: 10px ;
-        grid-template-columns: repeat(3. 1fr);
-          
-
-    } 
-    .grillaCinco{ 
-        justify-content: center;
-        grid-template-columns: 100%; 
-        grid-template-rows:10% 75% 10%; 
-        grid-template-areas: 
-                             "header" 
-                             "menuCinco"
-                             "pieDePagina"; 
-      } 
-      .header{
-          grid-area: header;
-      }
-      .menuCinco{
-          grid-area: main;
-      }
-      .pieDePagna{
-        
-          grid-area: footer;
-      }
-      
-      .logoelfarol{
-          margin-top: 27%;
-      }
-     
-    .mapa{
-       grid-column-start: span 3;
-       grid-row-start:span 3 ;
-    }
-    
-}
-
-@media (min-width: 600px){
-    .mapa{ 
-        grid-template-columns: repeat(3. 1fr);  
-
-    } 
-    .grillaCinco{ 
-        grid-template-columns: 100%; 
-        grid-template-rows:10% 60% 10%; 
-        grid-template-areas:
-                            "header" 
-                            "menuCinco"
-                            "pieDePagina"; 
-      }        
-               
-
-      .header{
-          grid-area: header;
-      }
-
-      .menuCinco{
-          grid-area: main;
-      }
-
-      .pieDePagina{
-          grid-area: footer;
-      }
-      .mapa{
-        grid-column-start: span 3; 
-        grid-row-start: span 3; 
-       
-    }
-}
-/** DISPOSITIVO MEDIO **/
-@media (min-width: 768px){
-    .mapa{ 
-        grid-template-columns: repeat(3, 1fr);  
-    } 
-    .grilla{ 
-        grid-template-columns: 100%; 
-        grid-template-rows:  10% 78% 10%; 
-        grid-template-areas:
-                            "header" 
-                            "menuCinco"
-                             "pieDePagina"; 
-      }  
-     
-
-    .header{
-        grid-area: header;
-    }  
-    
-    .menuCinco{
-        grid-area: main;
-    }
-
-    .pieDePagina{
-        grid-area: footer;
-    }
-   
-    .mapa{
-        grid-column-start: span 3;
-        grid-row-start: span 3;
-    }
-}
-
-
-/** CONTACTO **/
-/** DISPOSITIVO MOVIL **/
-@media (max-width:600px){
-
-    .grillaSies{
-        grid-template-columns: 100%;
-        grid-template-rows: 30% 50% 10%;
-        grid-template-areas: "header"
-                            "menuSeis"
-                            "pieDePagina";
-      }                  
-    .header{
-        grid-area: header;
-    }
-    .menuSeis{
-        grid-area: main;
-    }
-   .pieDePagina{
-       grid-area: footer;
-   }
-}
-
-
-@media (min-width:600px){
-
-
-    .grillaSies{
-        grid-template-columns: 100%;
-        grid-template-rows: 20% 60% 10%;
-        grid-template-areas: 
-                             "header"
-                            "section"
-                            "pieDePagina";
-      }                  
-    
-    
-    .header{
-        grid-area: header;
-    }
-        
-    .section{
-        grid-area: section;
-    }
-    
-    .pieDePagina{
-        grid-area: footer;
-    }
-}
-
-/** DISPOSITIVOS MEDIOS **/
-@media (min-width:768px){
-   
-
-        .grillaSies{
-            grid-template-columns: 50% 50%;
-            grid-template-rows: 30% 60% 10%;
-            grid-template-areas:  "header header"
-                                "section section"
-                                "pieDePagina pieDePagina";
-          }                  
-        .header{
-            grid-area: header;
-        }
-        .section{
-            grid-area: section;
-        }
-        .pieDePagina{
-            grid-area: footer;
-        }
-       
-    .formContacto{
-        grid-column-start: span 3;
-        grid-row-start: span 3 ;
-    }
-}
