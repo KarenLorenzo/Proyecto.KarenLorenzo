@@ -1,0 +1,272 @@
+$colorbg: #ff851b;
+
+body{
+    padding-top: 3rem ;
+    padding-bottom: 3rem;
+    color: #5a5a5a;
+    text-align: center;
+}
+
+.carousel{
+    margin-bottom: 4rem;
+
+    &-caption{
+        bottom: 3rem;
+        z-index: 10;
+    }
+
+    &-item{
+        height: 32rem;
+    
+        & img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            height: 32rem;
+        }
+    }
+}
+
+.marketing .col-lg-4{
+    margin-bottom: 1.5rem;
+    text-align: center;
+
+    & p{
+        margin-right: .75rem;
+        margin-left: .75rem;
+    }
+}
+
+.marketing h2{
+    font-weight: 400;
+}
+
+.featurette-divider{
+    margin: 5rem 0;
+}
+
+.featurette-heading{
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+
+
+/* RESPONSIVE CSS
+  -------------------------------------------------- */
+  
+  @media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+
+  .titulPrincipal{
+      text-align: center;
+  }
+
+  h1{
+      font-family: 'Dancing Script', cursive;
+      font-size: 50px;
+      padding: 50px;
+      color: rgb(90, 8, 8);
+    }
+
+
+    /** MAIN **/
+.menuSeis{
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/** FORMULARIO **/
+.subtitulo{
+    margin-top: 60px;
+    font-size: 30px;
+    font-weight: 50px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 50px;
+   display: block;
+    color:rgb(70, 3, 3);
+}
+
+.contenedor .form .form-header .form-title {
+    font-weight: normal;
+    font-family: sans-serif;
+    color: $colorbg;
+    text-align: center;
+    padding: 14px 0;
+
+    & span{
+        color: #fff;
+    }
+}
+
+
+.contenedor .form {
+background: rgba(0,0,0,.6);
+width: 90%;
+max-width: 780px;
+margin: auto;
+padding: 5px 35px;
+margin-top: 100px;
+margin-bottom: 70px;
+padding-bottom: 30px;
+border-radius: 3px;
+
+  & .form-label{
+    display: block;
+    color: $colorbg;
+    font-size: 16px;
+    font-family: Roboto;
+    position: relative;
+  }
+}
+
+
+.contenedor .form .form-input, .form-textarea {
+     background: rgba(0,0,0,.7);
+     border: none;
+     outline: none;
+     border-bottom: 2px solid $colorbg;
+     width: 100%;
+     padding: 12px;
+     margin-bottom: 20px; 
+     border-radius: 2px;
+     font-size: 14px;
+     color: #fff;
+    font-family: Roboto;
+}
+
+.contenedor .form .form-textarea{
+resize: vertical;
+min-width: 50px;
+}
+
+.contenedor .form .btn-submit{
+width: 100%;
+font-family: Roboto;
+outline: none;
+background: $colorbg;
+font-size: 16px;
+border: none;
+color: #fff;
+padding: 15px 0;
+cursor: pointer;
+transition: all .5s ease;
+
+   &:hover{
+    background: #F29718;
+   }
+}
+
+
+.menu{
+    text-align: center;
+}
+
+.main-conteiner{
+    margin: auto;
+    width: auto;
+    display: flex;
+    margin-bottom: 80px;
+    justify-content: space-around;
+}
+
+table{
+   width: 60%;
+   background:  linear-gradient(rgba(102, 1, 1, 0.61), rgba(129, 0, 0, 0.514));
+   border-collapse: collapse;
+   color: burlywood;
+}
+
+td{
+    padding: 12px;
+    font-size: 20px;
+    color: black;
+}
+
+tr:nth-child(even){
+     background-color: rgba(161, 46, 46, 0.199);
+}
+
+thead{
+    background-color:linear-gradient(rgba(124, 53, 53, 0.7), rgba(146, 49, 49, 0.7)); 
+    color: white;
+    font-family:'Dancing Script', cursive;
+    font-size: 60px;
+    text-align: center;
+    padding-left: 38%;
+}
+
+.menuCinco{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.mapa{
+  margin-bottom: 60px;
+    align-content: center;
+}
+
+
+.avisoUno{
+    font-size: 40px;
+    color: rgb(82, 7, 7);
+    font-family:'Dancing Script', cursive ;
+  }
+
+  .MensajeUno{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-family:'Poppins', sans-serif ;
+  }
+
+  .avisoDos{
+      @extend .avisoUno
+  }
+
+  .MensajeDos{
+      @extend .MensajeUno
+  }
+
+  .avisoTres{
+      @extend .avisoUno
+  }
+
+  .MensajeTres{
+      @extend .MensajeUno
+  }
+
+
+  @mixin mensajeAviso($colorLetra , $tamLetra ){
+      color: $colorLetra;
+      font-size: $tamLetra;
+      font-family:'Poppins', sans-serif;
+      padding-right: 20px;
+  }
+
+  .tituloUno{
+      @include mensajeAviso(black , 50px)
+  }
+
+  .textoUno{
+      @include mensajeAviso( rgb(104, 8, 8), 26px)
+  }
